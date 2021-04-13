@@ -1,0 +1,69 @@
+@import 'navbar.css'; 
+@import 'content.css'; 
+@import 'photos.css'; 
+
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+#root {
+  font-family: 'Electrolize', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header {
+  /* header styles */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 60px;
+  background: rgb(15, 198, 248);
+}
+
+header h1 {
+  width: 80%;
+  font-size: 2em;
+  line-height: 60px;
+}
+
+footer {
+  /* footer styles */
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  /* use mobile */
+  header h1 {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+  #hamburger-menu {
+    display: none;
+  }
+
+  nav {
+    position: inherit;
+    height: calc(100%-60px);
+    margin-left: 0;
+  }
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+}
